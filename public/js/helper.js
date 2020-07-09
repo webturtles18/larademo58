@@ -3,7 +3,9 @@ jq = jQuery.noConflict();
 function load_datepicker(){
     jq('.datepicker').datepicker({
         autoclose: true,
-        format: 'yyyy-mm-dd'
+        format: 'yyyy-mm-dd',
+        endDate: "+0d",
+        keyboardNavigation: false
     });
 }
 

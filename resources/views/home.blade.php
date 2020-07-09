@@ -33,12 +33,12 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <button type="submit" class="btn btn-info">Search</button>
+                                <button type="submit" class="btn btn-primary">Search</button>
                                 <a type="button" class="btn btn-danger" href="{{ route('home') }}">Reset</a>
                             </div>
                         </div>
                     </form>
-                    <div class="mb-3 mt-3"></div>
+                    <div class="mb-3 mt-5"></div>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
@@ -46,12 +46,13 @@
                     @endif
                     @include('includes.status')
                     <div class="table-responsive">
-                        <table class="table table-bordered">
+                        <table class="table datatable">
                             <thead class="thead-light">
                                 <tr>
                                     <th scope="col">#</th>
                                     <th scope="col">Name</th>
                                     <th scope="col">Date of Birth</th>
+                                    <th scope="col">Age</th>
                                     <th scope="col">Height</th>
                                     <th scope="col">Weight</th>
                                     <th scope="col">Occupation</th>
@@ -65,6 +66,7 @@
                                             <th scope="row">{{ $biodata->id }}</th>
                                             <td>{{ $biodata->first_name.' '.$biodata->last_name }}</td>
                                             <td>{{ $biodata->dob }}</td>
+                                            <td>{{ $biodata->age }} years</td>
                                             <td>{{ $biodata->height }}</td>
                                             <td>{{ $biodata->weight }}</td>
                                             <td>{{ $biodata->occupation }}</td>

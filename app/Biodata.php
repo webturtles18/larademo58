@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use DB;
+use Carbon\Carbon;
 
 class Biodata extends Model
 {
@@ -38,8 +39,10 @@ class Biodata extends Model
     */
     public function scopeFilter($query, $params)
     {
-//        $query->select('id','first_name','last_name'); 
         
+        if ( isset($params['id']) && !empty($params['id']) ){
+            $query->where('id', $params['id']);
+        }
         if ( isset($params['name']) && !empty($params['name'])) {
             $name = $params['name'];
             $query->where(function($que) use($name) {
@@ -56,6 +59,14 @@ class Biodata extends Model
         return $query;
     }
     
+    /**
+    * Accessor for Age.
+    */
+    public function getAgeAttribute()
+    {
+        return Carbon::parse($this->attributes['dob'])->age;
+    }
+
     public static function deleteById($id){
         return Biodata::where('id', $id)->delete();
     }

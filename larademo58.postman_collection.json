@@ -1,0 +1,75 @@
+{
+	"id": "7c3e99c9-937a-be61-4148-230b970b637a",
+	"name": "larademo58",
+	"description": "",
+	"order": [
+		"b17a5ed5-c4d0-6efa-c0db-ec80bb923a52",
+		"0eefb83f-adab-15b1-a051-30f3398e31d4"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1594295436412,
+	"owner": "8480180",
+	"public": false,
+	"requests": [
+		{
+			"id": "0eefb83f-adab-15b1-a051-30f3398e31d4",
+			"headers": "Authorization: Bearer CTGRi5nUUZUSHJ5zcTWQMViDe1Nn99Rvltuqcqialyo0d1kJTG4Yr0t2zeeN\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer CTGRi5nUUZUSHJ5zcTWQMViDe1Nn99Rvltuqcqialyo0d1kJTG4Yr0t2zeeN",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://larademo58.local.com/api/biodata",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1594295757062,
+			"name": "http://larademo58.local.com/api/user copy",
+			"description": "",
+			"collectionId": "7c3e99c9-937a-be61-4148-230b970b637a",
+			"responses": []
+		},
+		{
+			"id": "b17a5ed5-c4d0-6efa-c0db-ec80bb923a52",
+			"headers": "Authorization: Bearer CTGRi5nUUZUSHJ5zcTWQMViDe1Nn99Rvltuqcqialyo0d1kJTG4Yr0t2zeeN\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer CTGRi5nUUZUSHJ5zcTWQMViDe1Nn99Rvltuqcqialyo0d1kJTG4Yr0t2zeeN",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://larademo58.local.com/api/user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "7c3e99c9-937a-be61-4148-230b970b637a",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://larademo58.local.com/api/user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1594295440194,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
